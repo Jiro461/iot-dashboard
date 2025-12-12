@@ -208,7 +208,7 @@ export default function App() {
               </div>
               <span className="badge">{BUCKET_MINUTES}m buckets</span>
             </div>
-
+            {/*Đây là phần biểu đồ*/}
             <div className="chartWrap">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={chartData}>
@@ -242,6 +242,7 @@ export default function App() {
             </div>
           </div>
 
+            {/*Đây là phần thẻ bên phải*/}
           <div className="card">
             <div className="cardHeader">
               <div>
@@ -349,11 +350,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      )}
-
-      <div style={{ marginTop: 14, color: "rgba(255,255,255,0.45)", fontSize: 12 }}>
-        Ghi chú: Vì record C không có field <b>ts</b>, FE đang parse từ chuỗi <b>Time</b>. Nếu sau này bạn thêm <b>ts</b> (ms) ở BE thì query/sort sẽ tối ưu hơn.
-      </div>
+      )}     
     </div>
   );
 }
