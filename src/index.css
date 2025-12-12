@@ -1,0 +1,12 @@
+/* src/index.css */
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  display: block;
+}
+#root {
+  width: 100%;
+}
